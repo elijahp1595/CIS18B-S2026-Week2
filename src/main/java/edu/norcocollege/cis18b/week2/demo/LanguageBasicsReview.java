@@ -16,26 +16,27 @@ public class LanguageBasicsReview {
     public void demonstrate() {
         // TODO: Implement demonstration of basic Java features
         
-
-
-
         // NOTE: Remove the exception below when you've implemented your code
         // throw new UnsupportedOperationException("Not implemented yet");
     }
 
-    class Triangle {
-        private int sideA;
-        private int sideB;
-        private int sideC;
+    class rightTriangle {
+        private double sideA;
+        private double sideB;
+        private double sideC;
 
-        public Triangle() {
-            this(0,0,0);
+        public rightTriangle() {
+            this(0,0);
         }
 
-        public Triangle(int sA, int sB, int sC) {
+        public rightTriangle(double sA, double sB) {
             this.sideA = sA;
             this.sideB = sB;
-            this.sideC = sC;
+        }
+
+        public double rightTriangleCalculate() {
+            sideC = Math.sqrt((sideA * sideA)+(sideB * sideB));
+            return sideC;
         }
     }
 
