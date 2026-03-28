@@ -40,4 +40,25 @@ public class LanguageBasicsReview {
         }
     }
 
+     class Square {
+        private double sideA;
+        private double sideB;
+        private double Area;
+
+        public Square() {
+            this(0,0);
+        }
+
+        public Square(double sA, double sB) {
+            this.sideA = sA;
+            this.sideB = sB;
+        }
+
+        public double squareAreaCalculate() {
+            Area = (sideA * sideB);
+            return Area;
+        }
+    }
+
+
 }
